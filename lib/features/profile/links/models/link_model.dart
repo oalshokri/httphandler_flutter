@@ -1,13 +1,13 @@
 class LinkResponse {
   int? totalResults;
-  List<Link>? results;
+  List<Link> results = [];
 
   LinkResponse.fromJson(Map<String, dynamic> json) {
-    totalResults = json['total_results'];
-    if (json['results'] != null) {
-      results = [];
-      json['results'].forEach((v) {
-        results?.add(Link.fromJson(v));
+    //you can use your custom json field depend on api response
+    // totalResults = json['total_results'];
+    if (json['links'] != null) {
+      json['links'].forEach((v) {
+        results.add(Link.fromJson(v));
       });
     }
   }

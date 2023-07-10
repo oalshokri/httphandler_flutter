@@ -7,7 +7,7 @@ class LinkRepository {
   //example - you can use cashed user token
   String userToken = '1|LajBiiQSs1r9FOVowIXKpdFJYQAzCvrhCOjND7iM';
 
-  Future<List<Link>?> fetchLinkList() async {
+  Future<List<Link>> fetchLinkList() async {
     final response = await _helper.get("/links", {
       'Authorization': 'Bearer $userToken',
     });

@@ -19,7 +19,7 @@ class LinkProvider extends ChangeNotifier {
     _linkList = ApiResponse.loading('Fetching Links');
     notifyListeners();
     try {
-      List<Link>? links = await _linkRepository.fetchLinkList();
+      List<Link> links = await _linkRepository.fetchLinkList();
       _linkList = ApiResponse.completed(links);
       notifyListeners();
     } catch (e) {
