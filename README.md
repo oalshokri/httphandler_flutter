@@ -1,7 +1,8 @@
 # Handle Http request in Flutter (smart way)
 ## Some Prerequisites
 As we are going to implement this app using BLOC pattern you should know the basics of Streams and StreamControllers or bloc or Provider or any State Management way. Some basic knowledge of HTTP response codes and repository pattern will also be going to help you understand this more easily.
-The basic architecture of our Application is going to be like this.
+The basic architecture of our Application is going to be like this:
+
 ![Basic Architecture of our Application](https://miro.medium.com/v2/resize:fit:620/format:webp/1*ItecwYVQ68gTHY6h6S7mjA.png)
 ## Steps we are going to follow in this article :
 - Creating an API base helper class.
