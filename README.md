@@ -238,7 +238,7 @@ class LinkRepository {
 }
 ```
 
-## 6- Creating the Movie Bloc
+## 6- Creating the Link Bloc/Provider
 For consuming the various UI events and act accordingly, we are going to create a Link Provider. Its task is just to handle the “fetch link list” event and adding the returned data to the Sink which then can be easily listened by our UI.
 The main part of blog comes here as we are going to handle all those exceptions that we created. The basic thing that we are doing here is to track the different states of our Data and pass it to our UI using ChangeNotifier.
 State: Loading -> Notifies the UI that our data is currently loading.
@@ -277,8 +277,8 @@ class LinkProvider extends ChangeNotifier {
   }
 }
 ```
-## Last Step - Creating a Movie Screen to display popular movies
-In order to react to the states of our data, we going to create a Stateful widget called MovieScreen and listen to all that state changes using the Consumer widget which comes from Provider package.
+## Last Step - Creating a Profile view to display popular Links
+In order to react to the states of our data, we going to create a Stateful widget called ProfileView and listen to all that state changes using the Consumer widget which comes from Provider package.
 
 Things we should do ->
 
